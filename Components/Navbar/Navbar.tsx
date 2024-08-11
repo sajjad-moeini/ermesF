@@ -3,6 +3,7 @@ import DesktopNavbarItems from "../DesktopNavbarItems/DesktopNavbarItems";
 import MobileNavbarItems from "../MobileNavbarItems/MobileNavbarItems";
 import BarsIcon from "../Icons/BarsIcon/BarsIcon";
 import Link from "next/link";
+import { allAddresses } from "@/utils/addresses";
 
 function Navbar() {
   const [isShowMenuItem, setIsShowMenuItem] = useState(false);
@@ -28,7 +29,7 @@ function Navbar() {
             <DesktopNavbarItems />
           </div>
 
-          <Link href={"/contact-us"} className="rounded-xl !text-white py-2 px-4 bg-black">
+          <Link href={allAddresses.contact} className="rounded-xl !text-white py-2 px-4 bg-black">
             Contact Us
           </Link >
         </div>
